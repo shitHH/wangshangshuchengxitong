@@ -1,0 +1,237 @@
+package com.etc.pojo;
+
+import java.util.Date;
+
+/**
+ * @author zwh
+ * @date 2021/11/17
+ * 人员类
+ */
+public class User {
+
+    /**
+     * 人员编号
+     */
+    private int userId;
+
+    /**
+     * 角色编号
+     */
+    private int roleId;
+
+
+
+    /**
+     * 人员姓名
+     */
+    private String userName;
+
+    /**
+     * 人员登录密码
+     */
+    private String userPassword;
+
+    /**
+     * 人员性别
+     */
+    private char userSex;
+
+    /**
+     * 人员生日
+     */
+    private Date userBirthday;
+
+    /**
+     * 人员年龄
+     */
+    private int userAge;
+
+    /**
+     * 人员来自市区
+     */
+    private String userCity;
+
+    /**
+     * 人员电话
+     */
+    private String userTel;
+
+    /**
+     * 人员邮箱
+     */
+    private String userEmail;
+
+    /**
+     * 人员证件号
+     */
+    private String userIdNumber;
+
+    /**
+     * 头像链接地址
+     */
+    private String userPhoto;
+
+    /**
+     * 账户余额
+     */
+    private double userBalance;
+
+    /**
+     * 是否是会员0不是1是
+     */
+    private int memberStats;
+
+    public User() {
+    }
+
+
+
+    public User(int userId, int roleId, String userName, String userPassword, char userSex, Date userBirthday, int userAge, String userCity, String userTel, String userEmail, String userIdNumber, String userPhoto, double userBalance, int memberStats) {
+        this.userId = userId;
+        this.roleId = roleId;
+        this.userName = userName;
+        this.userPassword = userPassword;
+        this.userSex = userSex;
+        this.userBirthday = userBirthday;
+        this.userAge = userAge;
+        this.userCity = userCity;
+        this.userTel = userTel;
+        this.userEmail = userEmail;
+        this.userIdNumber = userIdNumber;
+        this.userPhoto = userPhoto;
+        this.userBalance = userBalance;
+        this.memberStats = memberStats;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", roleId=" + roleId +
+                ", userName='" + userName + '\'' +
+                ", userPassword='" + userPassword + '\'' +
+                ", userSex=" + userSex +
+                ", userBirthday=" + userBirthday +
+                ", userAge=" + userAge +
+                ", userCity='" + userCity + '\'' +
+                ", userTel='" + userTel + '\'' +
+                ", userEmail='" + userEmail + '\'' +
+                ", userIdNumber='" + userIdNumber + '\'' +
+                ", userPhoto='" + userPhoto + '\'' +
+                ", userBalance=" + userBalance +
+                ", memberStats=" + memberStats +
+                '}';
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public int getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(int roleId) {
+        this.roleId = roleId;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getUserPassword() {
+        return userPassword;
+    }
+
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
+    }
+
+    public char getUserSex() {
+        return userSex;
+    }
+
+    public void setUserSex(char userSex) {
+        this.userSex = userSex;
+    }
+
+    public Date getUserBirthday() {
+        return userBirthday;
+    }
+
+    public void setUserBirthday(Date userBirthday) {
+        this.userBirthday = userBirthday;
+    }
+
+    public int getUserAge() {
+        return userAge;
+    }
+
+    public void setUserAge(int userAge) {
+        this.userAge = userAge;
+    }
+
+    public String getUserCity() {
+        return userCity;
+    }
+
+    public void setUserCity(String userCity) {
+        this.userCity = userCity;
+    }
+
+    public String getUserTel() {
+        return userTel;
+    }
+
+    public void setUserTel(String userTel) {
+        this.userTel = userTel;
+    }
+
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+    }
+
+    public String getUserIdNumber() {
+        return userIdNumber;
+    }
+
+    public void setUserIdNumber(String userIdNumber) {
+        this.userIdNumber = userIdNumber;
+    }
+
+    public String getUserPhoto() {
+        return userPhoto;
+    }
+
+    public void setUserPhoto(String userPhoto) {
+        this.userPhoto = userPhoto;
+    }
+
+    public double getUserBalance() {
+        return userBalance;
+    }
+
+    public void setUserBalance(double userBalance) {
+        this.userBalance = userBalance;
+    }
+
+    public int getMemberStats() {
+        return memberStats;
+    }
+
+    public void setMemberStats(int memberStats) {
+        this.memberStats = memberStats;
+    }
+}
